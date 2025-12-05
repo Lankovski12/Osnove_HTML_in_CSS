@@ -285,22 +285,22 @@ h1 {
 - Dodaj črto k besedilu
 
 ```css
-<-- Črta nad besedilom -->
+/* Črta nad besedilom */
 h1 {
   text-decoration-line: overline;
 }
 
-<-- Črta čez besedilo -->
+/* Črta čez besedilo */
 h2 {
   text-decoration-line: line-through;
 }
 
-<-- Črta pod besedilom -->
+/* Črta pod besedilom */
 h3 {
   text-decoration-line: underline;
 }
 
-<-- Črta nad in pod besedilom -->
+/* Črta nad in pod besedilom */
 p {
   text-decoration-line: overline underline;
 }
