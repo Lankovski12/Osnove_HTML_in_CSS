@@ -26,6 +26,7 @@
 11. [CSS in barve](#css-in-barve)
 12. [Slika za ozadje](#slika-za-ozadje)
 13. [Dekoriranje besedila](#dekoriranje-besedila)
+14. [Fonti besedila](#fonti-besedila)
 
 ---
 
@@ -274,8 +275,7 @@ h1 {
     text-align: justify;
 }
 
-<!-- Justify naredi, da je besedilo raztegnjeno enakomerno čez celotno stran.
--->
+<!-- Justify naredi, da je besedilo raztegnjeno enakomerno čez celotno stran.-->
 
 ```
 
