@@ -22,6 +22,9 @@
 7. [Seznami](#seznami)
 8. [Tabele](#tabele)
 9. [Link do CSS](#link-do-css)
+10. [CSS za značke](#css-za-značke)
+11. [CSS in barve](#css-in-barve)
+12. [Slika za ozadje](#slika-za-ozadje)
 
 ---
 
@@ -199,9 +202,49 @@ body {
     background-color: blue;
 }
 ```
-Ti <h1> naslov ni dovolj velik? Ni problema, povečaj jo s css.
+Ti <i>h1</i> naslov ni dovolj velik? Ni problema, povečaj ga s css.
 ```css
 h1 {
     size: 20px;
 }
 ```
+# CSS in barve
+
+- Barva pisave
+```css
+p {
+    color: pink;
+}
+```
+- Barva ozadja
+```css
+p {
+    background-color: rgb(255, 99, 71);
+}
+```
+- Barva obrobja
+```css
+p {
+    border: #ff6347;
+}
+```
+
+# Slika za ozadje
+```css
+body {
+    background-image: url("paper.gif");
+}
+```
+
+# Dekoriranje besedila
+- Poravnava besedila, na voljo so: left, right, center, justify.
+
+```css
+h1 {
+    text-align: center;
+}
+```
+Justify naredi, da je besedilo raztegnjeno enakomerno čez celotno stran.
+
+
+
