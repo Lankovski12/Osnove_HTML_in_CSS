@@ -58,13 +58,13 @@
 <h5>Že zelo majhen</h5>
 <h6>Najmanjši naslov</h6>
 ```
-
+---
 # Odstavki
 
 ```html
 <p>To je besedilo.</p>
 ```
-
+---
 # Urejanje besedila
 
 ```html
@@ -84,7 +84,7 @@
 
 <mark>Označeno z barvo</mark>
 ```
-
+---
 # Linki
 
 ```html
@@ -109,7 +109,6 @@ a {
   text-decoration: none;
 }
 ```
-
 ---
 
 # Slike
@@ -194,13 +193,23 @@ Prav tako je na voljo nekaj drugih tipov.
   </tr>
 </table>
 ```
+---
+# Gumbi
+```html
+<button>Click Me</button>
+```
+### Ko klikneš gumb, te pelje na novo stran
+```html
+<button onclick="location.href='http://www.example.com'" type="button">
+         www.example.com</button>
+```
 # Link do CSS
 
 Najprej vedno poglej če si HTML stran povezal z CSS.
 ```css
 <link rel="stylesheet" href="mystyle.css">
 ```
-
+---
 # CSS za značke
 ![alt text](image-1.png)
 
@@ -216,6 +225,7 @@ h1 {
     font-size: 20px;
 }
 ```
+---
 # CSS in barve
 
 - Barva pisave
@@ -236,14 +246,14 @@ p {
     border: #ff6347;
 }
 ```
-
+---
 # Slika za ozadje
 ```css
 body {
     background-image: url("paper.gif");
 }
 ```
-
+---
 # Dekoriranje besedila
 - Poravnava besedila, na voljo so: left, right, center, justify.
 
@@ -298,7 +308,7 @@ p {
 ```
 Lahko spreminiš barvo črte
 ```css
- text-decoration-color: red;
+text-decoration-color: red;
 ```
 Lahko spremeniš izgled črte
 ```css
@@ -317,13 +327,32 @@ Določiš lahko tudi debelino
 text-decoration-thickness: 5px;
 ```
 - Senca pri besedilu
-<p style="text-shadow: 2px 2px 5px red;">Dodaj senco</p>
-
 ```css
 h1 {
   text-shadow: 2px 2px 5px red;
 }
 ```
+---
 # Fonti besedila
 
+```css
+h1 {
+  font-family: serif;
+}
 
+h1 {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: fantasy;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+h1 {
+  font-family: cursive;
+}
+```
