@@ -21,12 +21,13 @@
 6. [Slike](#slike)
 7. [Seznami](#seznami)
 8. [Tabele](#tabele)
-9. [Link do CSS](#link-do-css)
-10. [CSS za značke](#css-za-značke)
-11. [CSS in barve](#css-in-barve)
-12. [Slika za ozadje](#slika-za-ozadje)
-13. [Dekoriranje besedila](#dekoriranje-besedila)
-14. [Fonti besedila](#fonti-besedila)
+9. [Gumbi](#gumbi)
+10. [Link do CSS](#link-do-css)
+11. [CSS za značke](#css-za-značke)
+12. [CSS in barve](#css-in-barve)
+13. [Slika za ozadje](#slika-za-ozadje)
+14. [Dekoriranje besedila](#dekoriranje-besedila)
+15. [Fonti besedila](#fonti-besedila)
 
 ---
 
@@ -104,7 +105,7 @@ Atribut target
 ```html
 <a href="default.asp"><img src="smiley.gif" alt="HTML tutorial""></a>
 ```
-###Ne želiš imeti črte pod linkom?
+### Ne želiš imeti črte pod linkom?
 ```css
 a {
   text-decoration: none;
@@ -204,6 +205,7 @@ Prav tako je na voljo nekaj drugih tipov.
 <button onclick="location.href='http://www.example.com'" type="button">
          www.example.com</button>
 ```
+---
 # Link do CSS
 
 Najprej vedno poglej če si HTML stran povezal z CSS.
