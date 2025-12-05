@@ -21,6 +21,7 @@
 6. [Slike](#slike)
 7. [Seznami](#seznami)
 8. [Tabele](#tabele)
+9. [Link do CSS](#link-do-css)
 
 ---
 
@@ -96,9 +97,7 @@ Atribut target
 ```
 ### Kako uporabimo sliko kot link?
 ```html
-<a href="default.asp">
-<img src="smiley.gif" alt="HTML tutorial"">
-</a>
+<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial""></a>
 ```
 ---
 
@@ -134,9 +133,11 @@ Na voljo imamo <b>urejen/ordered</b>, kar pomeni da lahko vrstice številčimo.
 ```
 Na voljo je nekaj drugih tipov oštevilčenja.
 ```html
-<ul type = "disc">
-<ul type = "circle">
-<ul type = "square">
+<ol type = "1">
+<ol type = "I">
+<ol type = "i">
+<ol type = "A">
+<ol type = "a">
 ```
 In pa <b>neurejen/unordered</b> seznam, kjer vrsticam dodamo krogce.
 - Kava
@@ -151,15 +152,13 @@ In pa <b>neurejen/unordered</b> seznam, kjer vrsticam dodamo krogce.
 ```
 Prav tako je na voljo nekaj drugih tipov.
 ```html
-<ol type = "1">
-<ol type = "I">
-<ol type = "i">
-<ol type = "A">
-<ol type = "a">
+<ul type = "disc">
+<ul type = "circle">
+<ul type = "square">
 ```
 ### Si želiš uporabiti ikonco?
 ```html
-<ul style="list-style-type: ' 💵 ';">
+<ul style="list-style-type: '💵';">
 ```
 ---
 
@@ -184,62 +183,25 @@ Prav tako je na voljo nekaj drugih tipov.
   </tr>
 </table>
 ```
+# Link do CSS
 
-
-### Barva ozadja
-
+Najprej vedno poglej če si HTML stran povezal z CSS.
 ```css
-background-color: yellow;
+<link rel="stylesheet" href="mystyle.css">
 ```
 
-### Barva besedila
+# CSS za značke
+![alt text](image-1.png)
 
+Recimo, da bi želeli, da ima naša stran barvno ozadje. Katera značka zajame celotno stran? Tako je, body je ta zanačka.
 ```css
-color: red;
-```
-
-### Velikost besedila
-
-```css
-font-size: 24px;
-```
-
-### Poravnava
-
-```css
-text-align: center;
-```
-
----
-
-# 🎨 Barve v CSS
-
-Lahko uporabljaš besede ali HEX kode.
-
-### Primeri
-
-```css
-color: blue;
-color: #ff5733; /* oranžna */
-```
-
----
-
-# 💡 Primeri za kopiranje
-
-## Preprost naslov in paragraf
-
-```html
-<h1>Moj naslov</h1>
-<p>To je moja prva HTML vrstica!</p>
-```
-
-## Barvno ozadje strani
-
-```html
-<style>
 body {
-    background-color: pink;
+    background-color: blue;
 }
-</style>
+```
+Ti <h1> naslov ni dovolj velik? Ni problema, povečaj jo s css.
+```css
+h1 {
+    size: 20px;
+}
 ```
