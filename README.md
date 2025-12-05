@@ -2,21 +2,29 @@
 
 Živjo! To stran sem naredila, da hitro najdeš značko, ki jo potrebuješ. Upam, da ti bo koristilo in veliko uspeha pri grajenju strani. 🎉
 
+## Strani, ki mi vedno pridejo prav
+- Super stran za pomoč pri html in css<br> https://www.w3schools.com/html/default.asp
+- Izbira barv<br>https://www.canva.com/colors/color-wheel/
+
+- Stran za ikone<br> https://www.flaticon.com/free-icons/finder
+- Stran za gif-e<br> https://giphy.com/
+- Stran za slike<br> https://pixabay.com/
 ---
 
-# 📑 Kazalo
+# Kazalo
 
 1. [Osnovna HTML struktura](#osnovna-html-struktura)
 2. [Naslovi](#naslovi)
 3. [Odstavki](#odstavki)
 4. [Urejanje besedila](#urejanje-besedila)
 5. [Linki](#linki)
-6. [Barve v CSS](#barve-v-css)
-7. [Primeri za kopiranje](#primeri-za-kopiranje)
+6. [Slike](#slike)
+7. [Seznami](#seznami)
+8. [Tabele](#tabele)
 
 ---
 
-# 🧩 Osnovna HTML struktura
+# Osnovna HTML struktura
 
 ```html
 <!DOCTYPE html>
@@ -28,6 +36,10 @@
     <h1>Živjo!</h1>
 </body>
 </html>
+```
+### Želiš da bi title na zavihku imel ikono?
+```html
+<link rel="icon" href="pot_do_ikone">
 ```
 
 ---
@@ -56,10 +68,15 @@
 ```
 ```html
 <b>Odebeljeno besedilo</b>
+
 <strong>Pomebno besedilo</strong>
+
 <i>italic/poševno besedilo</i>
+
 <u>Podčrtano besedilo</u>
+
 <del>Prečrtano besedilo</del>
+
 <mark>Označeno z barvo</mark>
 ```
 
@@ -85,27 +102,89 @@ Atribut target
 ```
 ---
 
-# 🎨 Kaj je CSS?
+# Slike
 
-CSS je jezik za barve, velikosti in videz na spletni strani. Kot barvice za HTML.
+Atribut <i>src</i> definira pot do slike. Atribut <i>alt</i> definira ime slike.
+```html
+<img src="pic_trulli.jpg" alt="Italian Trulli">
+```
+### Si želiš, da bi bila slika, desno ali levo od besedila?
+```html
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+Ta slika bo bila desno od besedila</p>
 
+<p><img src="smiley.gif" alt="Smiley face" style="float:left">
+Ta slika bo bila levo od besedila</p>
+```
 ---
 
-# 🖍️ Kako dodamo CSS?
-
-### Najlažje:
+# Seznami
+Na voljo imamo <b>urejen/ordered</b>, kar pomeni da lahko vrstice številčimo.
+<br>
+1. Mačka
+2. Kuža
+3. Papiga
 
 ```html
-<style>
-    body {
-        background-color: lightblue;
-    }
-</style>
+<ol>
+  <li>Mačka</li>
+  <li>Kuža</li>
+  <li>Papiga</li>
+</ol>
 ```
-
+Na voljo je nekaj drugih tipov oštevilčenja.
+```html
+<ul type = "disc">
+<ul type = "circle">
+<ul type = "square">
+```
+In pa <b>neurejen/unordered</b> seznam, kjer vrsticam dodamo krogce.
+- Kava
+- Čaj
+- Mleko
+```html
+<ul>
+  <li>Kava</li>
+  <li>Čaj</li>
+  <li>Mleko</li>
+</ul>
+```
+Prav tako je na voljo nekaj drugih tipov.
+```html
+<ol type = "1">
+<ol type = "I">
+<ol type = "i">
+<ol type = "A">
+<ol type = "a">
+```
+### Si želiš uporabiti ikonco?
+```html
+<ul style="list-style-type: ' 💵 ';">
+```
 ---
 
-# 🌈 Najpogostejša CSS pravila
+# Tabele
+![alt text](image.png)
+```html
+<table style="width:100%">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+```
+
 
 ### Barva ozadja
 
