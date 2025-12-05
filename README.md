@@ -28,6 +28,7 @@
 13. [Slika za ozadje](#slika-za-ozadje)
 14. [Dekoriranje besedila](#dekoriranje-besedila)
 15. [Fonti besedila](#fonti-besedila)
+16. [CSS in slike](#css-in-slike)
 
 ---
 
@@ -208,7 +209,7 @@ Prav tako je na voljo nekaj drugih tipov.
 ---
 # Link do CSS
 
-Najprej vedno poglej če si HTML stran povezal z CSS.
+Najprej vedno poglej, če si HTML stran povezal z CSS.
 ```css
 <link rel="stylesheet" href="mystyle.css">
 ```
@@ -358,3 +359,21 @@ h1 {
   font-family: cursive;
 }
 ```
+---
+# CSS in slike
+
+Sliki lahko spreminjamo velikost.
+```css
+img {
+  height: 200px;
+  width: 200px;
+}
+```
+Moje priporočilo je, da najprej pogledaš katera stranica je manjša, spreminiš ta atribut, drugega nastaviš na <i>auto</i>. Tako boš ohranil kvaliteto slike.
+```css
+img {
+  width: 200px;
+  height: auto;
+}
+```
+---
