@@ -25,6 +25,7 @@
 10. [CSS za značke](#css-za-značke)
 11. [CSS in barve](#css-in-barve)
 12. [Slika za ozadje](#slika-za-ozadje)
+13. [Dekoriranje besedila](#dekoriranje-besedila)
 
 ---
 
@@ -102,6 +103,13 @@ Atribut target
 ```html
 <a href="default.asp"><img src="smiley.gif" alt="HTML tutorial""></a>
 ```
+###Ne želiš imeti črte pod linkom?
+```css
+a {
+  text-decoration: none;
+}
+```
+
 ---
 
 # Slike
@@ -205,7 +213,7 @@ body {
 Ti <i>h1</i> naslov ni dovolj velik? Ni problema, povečaj ga s css.
 ```css
 h1 {
-    size: 20px;
+    font-size: 20px;
 }
 ```
 # CSS in barve
@@ -243,8 +251,79 @@ body {
 h1 {
     text-align: center;
 }
-```
-Justify naredi, da je besedilo raztegnjeno enakomerno čez celotno stran.
 
+h1 {
+    text-align: left;
+}
+
+h1 {
+    text-align: right;
+}
+
+h1 {
+    text-align: justify;
+}
+
+<!-- Justify naredi, da je besedilo raztegnjeno enakomerno čez celotno stran.
+-->
+
+```
+
+- Dodaj črto k besedilu
+
+```css
+<!-- Črta nad besedilom
+-->
+h1 {
+  text-decoration-line: overline;
+}
+
+<!-- Črta čez besedilo
+-->
+h2 {
+  text-decoration-line: line-through;
+}
+
+<!-- Črta pod besedilom
+-->
+h3 {
+  text-decoration-line: underline;
+}
+
+<!-- Črta nad in pod besedilom
+-->
+p {
+  text-decoration-line: overline underline;
+}
+```
+Lahko spreminiš barvo črte
+```css
+ text-decoration-color: red;
+```
+Lahko spremeniš izgled črte
+```css
+text-decoration-style: solid;
+
+text-decoration-style: double;
+
+text-decoration-style: dotted;
+
+text-decoration-style: dashed;
+
+text-decoration-style: wavy;
+```
+Določiš lahko tudi debelino
+```css
+text-decoration-thickness: 5px;
+```
+- Senca pri besedilu
+<p style="text-shadow: 2px 2px 5px red;">Dodaj senco</p>
+
+```css
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+```
+# Fonti besedila
 
 
