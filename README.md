@@ -29,6 +29,7 @@
 14. [Dekoriranje besedila](#dekoriranje-besedila)
 15. [Fonti besedila](#fonti-besedila)
 16. [CSS in slike](#css-in-slike)
+17. [Div, class, id](#div-class-id)
 
 ---
 
@@ -373,3 +374,38 @@ img {
 }
 ```
 ---
+
+# Div, class, id
+
+### Div
+
+Div predstavlja nahrbnik. V njega zapakiras vse kar si želiš, da bila nekakšna celota. 
+```html
+<div class="okvirji">
+    <img src="slike/Haley.png">
+    <p>Ime: Haley</p>
+    <p>Najljubša barva: Roza</p>
+</div>
+```
+```css
+.okvirji{
+	border: solid 1px hotpink;
+}
+```
+<img width="599" height="342" alt="image" src="https://github.com/user-attachments/assets/2c4cf9d2-91c3-4f5b-a904-df2d12d08662" />
+
+### id
+Če želiš, da imamo samo en specifečen element,div,... določeno css kodo. Id je načeloma lahko samo enkrat uporabljen. Uporabiš # pred imenom.
+```html
+<h1 id="Glavni_naslov">Predstavitev likov v Stardew valley</h1>
+```
+```css
+#Glavni_naslov{
+	color: violet;
+	font-family: sans-serif;
+}
+```
+
+### class
+Ko želiš, da ima več elementov, div-ov,... enako css kodo. Class se lahko uporabi večkrat v html kodi. Uporabiš . pred imenom. Glej primer pri div.
+
