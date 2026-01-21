@@ -30,6 +30,7 @@
 15. [Fonti besedila](#fonti-besedila)
 16. [CSS in slike](#css-in-slike)
 17. [Div, class, id](#div-class-id)
+18. [Navigacijski meni](#navigacijski-meni)
 
 ---
 
@@ -408,4 +409,49 @@ Div predstavlja nahrbnik. V njega zapakiras vse kar si želiš, da bila nekakšn
 
 ### class
 Ko želiš, da ima več elementov, div-ov,... enako css kodo. Class se lahko uporabi večkrat v html kodi. Uporabiš . pred imenom. Glej primer pri div.
+
+# Navigacijski meni
+Naj prej narediš seznam.
+```html
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+```
+Z css dosežemo, da seznam zgleda kot navigacija.
+```css
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+```
+Če želite, da je navigacija vedno vidna.
+```css
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+```
 
