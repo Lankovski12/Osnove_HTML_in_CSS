@@ -31,7 +31,7 @@
 16. [CSS in slike](#css-in-slike)
 17. [Div, class, id](#div-class-id)
 18. [Navigacijski meni](#navigacijski-meni)
-
+19. [Grid](#grid)
 ---
 
 # Osnovna HTML struktura
@@ -455,3 +455,48 @@ ul {
 }
 ```
 
+#Grid
+
+Naj prej ustvari div, ki bo predstavljal okvir za vse ostale div, ki jih želiš dodati.
+```html
+<body>
+	<div id="grid">
+		//Vsi ostali div, slike, besedilo
+	</div>
+</body>
+```
+
+Da bo element spletne strani del grid nujno potrebuje id ali class, div ni pogoj.
+V css naj prej povej, da uporabljamo grid in kateri div je glavni.
+```css
+#grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	'nav nav'
+	'prva opis1'
+	'gumb opis2'
+	'opis3 slika2';
+}
+```
+Ostalim elementom moramo povedati, kako jih je ime, vsaj večino časa ne zazna imen id ali class-ov.
+```css
+#nav {
+	grid-area: nav;
+}
+```
+Nismo še spoznali ampak zelo priročno za nalogo.
+
+Če želiš, da se EN element poravna na sredino prostora, ki ga zaseda po x-osi uporabi naslednje:
+```css
+#opis1 {
+	justify-self: center;
+}
+```
+
+Če želiš, da se EN element poravna na sredino prostora, ki ga zaseda po y-osi pa uporabi:
+```css
+#opis1 {
+	align-self: center;
+}
+```
