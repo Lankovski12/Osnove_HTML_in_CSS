@@ -455,7 +455,7 @@ ul {
 }
 ```
 
-#Grid
+# Grid
 
 Naj prej ustvari div, ki bo predstavljal okvir za vse ostale div, ki jih želiš dodati.
 ```html
