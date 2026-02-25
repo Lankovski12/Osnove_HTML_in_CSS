@@ -32,6 +32,7 @@
 17. [Div, class, id](#div-class-id)
 18. [Navigacijski meni](#navigacijski-meni)
 19. [Grid](#grid)
+20. [Flex](#flex)
 ---
 
 # Osnovna HTML struktura
@@ -500,3 +501,66 @@ Nismo še spoznali ampak zelo priročno za nalogo.
 	align-self: center;
 }
 ```
+#Flex
+Za enodimenzionalno urejenje uporabljamo Flex.
+```css
+#slike {
+	display: flex;
+}
+```
+Elementi znotraj div-a so lahko v vrsti ali v stolpcu.
+```css
+#slike {
+	display: flex;
+	flex-direction: row;
+	//ali
+	flex-direction: column;
+	//ali
+	flex-direction: row-reverse;
+	//ali
+	flex-direction: column-reverse
+}
+```
+<img width="396" height="106" alt="image" src="https://github.com/user-attachments/assets/303698a8-8e71-4f4f-83e7-7d95916f90b2" />
+<img width="138" height="266" alt="image" src="https://github.com/user-attachments/assets/92414b7d-da14-4ff2-a801-b648d82cd16f" />
+
+Ko želimo urejati pozicijo po x-osi znotraj flex-a uporabljamo justify-content.
+```css
+#slike {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+```
+Vse vrednosti so:
+- center
+- flex-start
+- flex-end
+- space-around
+- space-between
+- space-evenly
+
+Po y-osi pa align-content ali align-items. Raje uporabljajte align-items, saj se align-content uporablja le ko flex zavzame več kot eno vrstico.
+```css
+#slike {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+```
+Align-items ima vrednsoti:
+- normal
+- stretch
+- center
+- flex-start
+- flex-end
+- baseline
+
+Align-content pa:
+-stretch (default)
+- center
+- flex-start
+- flex-end
+- space-between
+- space-around
+- space-evenly
