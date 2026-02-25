@@ -557,7 +557,7 @@ Align-items ima vrednsoti:
 - baseline
 
 Align-content pa:
--stretch (default)
+- stretch
 - center
 - flex-start
 - flex-end
