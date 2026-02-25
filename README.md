@@ -501,7 +501,7 @@ Nismo še spoznali ampak zelo priročno za nalogo.
 	align-self: center;
 }
 ```
-#Flex
+# Flex
 Za enodimenzionalno urejenje uporabljamo Flex.
 ```css
 #slike {
