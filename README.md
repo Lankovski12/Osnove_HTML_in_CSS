@@ -513,57 +513,41 @@ Elementi znotraj div-a so lahko v vrsti ali v stolpcu.
 
 # Pozicioniranje
 
-Če želiš, da se EN element poravna na sredino prostora, ki ga zaseda po x-osi uporabi naslednje:
-```css
-#opis1 {
-	justify-self: center;
-}
-```
+Vedno se najprej vprašaj ali želiš poravnati EN element ali VEČ.
 
-Če želiš, da se EN element poravna na sredino prostora, ki ga zaseda po y-osi pa uporabi:
-```css
-#opis1 {
-	align-self: center;
-}
-```
+self -> en element
+items -> vsi elementi znotraj nečesa
+content -> razporeditev prostora
 
-Ko želimo urejati pozicijo po x-osi znotraj flex-a uporabljamo justify-content.
-```css
-#slike {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-```
-Vse vrednosti so:
-- center
-- flex-start
-- flex-end
-- space-around
-- space-between
-- space-evenly
+Justify uporabljamo za poravnavo po glavni osi (x-os).
+- justify-content: center;
+- justify-content: space-between;
+- justify-content: space-around;
+- justify-content: space-evenly;
 
-Po y-osi pa align-content ali align-items. Raje uporabljajte align-items, saj se align-content uporablja le ko flex zavzame več kot eno vrstico.
+Ko delamo flex moramo paziti, saj ko postavimo elemente v stolpec se osi zamenjata.
+Pri flex-direction: row; -> vodoravno (x-os)
+Pri flex-direction: column -> navpično (y-os)
+
+Align pa uporabljamo pri y-osi.
+- align-items: center;
+- align-items: flex-start;
+- align-items: flex-end;
+- align-items: stretch;
+
+Če želimo razmik pri med elementi lahko uporabimo GAP.
 ```css
 #slike {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	gap: 20px;
 }
 ```
-Align-items ima vrednsoti:
-- normal
-- stretch
-- center
-- flex-start
-- flex-end
-- baseline
-
-Align-content pa:
-- stretch
-- center
-- flex-start
-- flex-end
-- space-between
-- space-around
-- space-evenly
+Ko imamo več slik in nam ni všeč da se gužvajo v eni vrsti lahko uporabimo WRAP, ki pa lepo razporedi elemente in jih po potrebi do v novo vrstico, če prostora več ni.
+```css
+#slike {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+```
