@@ -33,6 +33,7 @@
 18. [Navigacijski meni](#navigacijski-meni)
 19. [Grid](#grid)
 20. [Flex](#flex)
+21. [Pozicioniranje](#pozicioniranje)
 ---
 
 # Osnovna HTML struktura
@@ -480,27 +481,13 @@ V css naj prej povej, da uporabljamo grid in kateri div je glavni.
 	'opis3 slika2';
 }
 ```
-Ostalim elementom moramo povedati, kako jih je ime, vsaj večino časa ne zazna imen id ali class-ov.
+Ostalim elementom moramo povedati, kako jim je ime, vsaj večino časa ne zazna imen id ali class-ov.
 ```css
 #nav {
 	grid-area: nav;
 }
 ```
-Nismo še spoznali ampak zelo priročno za nalogo.
 
-Če želiš, da se EN element poravna na sredino prostora, ki ga zaseda po x-osi uporabi naslednje:
-```css
-#opis1 {
-	justify-self: center;
-}
-```
-
-Če želiš, da se EN element poravna na sredino prostora, ki ga zaseda po y-osi pa uporabi:
-```css
-#opis1 {
-	align-self: center;
-}
-```
 # Flex
 Za enodimenzionalno urejenje uporabljamo Flex.
 ```css
@@ -523,6 +510,22 @@ Elementi znotraj div-a so lahko v vrsti ali v stolpcu.
 ```
 <img width="396" height="106" alt="image" src="https://github.com/user-attachments/assets/303698a8-8e71-4f4f-83e7-7d95916f90b2" />
 <img width="138" height="266" alt="image" src="https://github.com/user-attachments/assets/92414b7d-da14-4ff2-a801-b648d82cd16f" />
+
+# Pozicioniranje
+
+Če želiš, da se EN element poravna na sredino prostora, ki ga zaseda po x-osi uporabi naslednje:
+```css
+#opis1 {
+	justify-self: center;
+}
+```
+
+Če želiš, da se EN element poravna na sredino prostora, ki ga zaseda po y-osi pa uporabi:
+```css
+#opis1 {
+	align-self: center;
+}
+```
 
 Ko želimo urejati pozicijo po x-osi znotraj flex-a uporabljamo justify-content.
 ```css
