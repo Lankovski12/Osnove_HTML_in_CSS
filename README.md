@@ -34,6 +34,7 @@
 19. [Grid](#grid)
 20. [Flex](#flex)
 21. [Pozicioniranje](#pozicioniranje)
+22. [Input](#input)
 ---
 
 # Osnovna HTML struktura
@@ -609,7 +610,7 @@ Ko imamo več slik in nam ni všeč da se gužvajo v eni vrsti lahko uporabimo W
   <input type="date" id="birthday" name="birthday">
   <input type="submit">
 </form>
-```html
+```
 
 <img width="761" height="120" alt="image" src="https://github.com/user-attachments/assets/713ad710-8d5c-446d-ba02-be69c1e51284" />
 
