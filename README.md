@@ -636,3 +636,18 @@ At w3schools.com you will learn how to make a website. They offer free tutorials
 
 <img width="1197" height="316" alt="image" src="https://github.com/user-attachments/assets/d2ed656a-8032-4416-b4d6-4ad7f2d21bcf" />
 
+```html
+<form>
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+<img width="550" height="383" alt="image" src="https://github.com/user-attachments/assets/a8ee1d6d-4199-42d9-87b6-f3238c04c1dd" />
