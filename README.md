@@ -133,6 +133,10 @@ Ta slika bo bila desno od besedila</p>
 <p><img src="smiley.gif" alt="Smiley face" style="float:left">
 Ta slika bo bila levo od besedila</p>
 ```
+
+```html
+background-image: url('img_girl.jpg');
+```
 ---
 
 # Seznami
