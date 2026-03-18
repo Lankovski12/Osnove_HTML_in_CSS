@@ -551,3 +551,83 @@ Ko imamo več slik in nam ni všeč da se gužvajo v eni vrsti lahko uporabimo W
 	flex-wrap: wrap;
 }
 ```
+
+# Input
+```html
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+<img width="828" height="351" alt="image" src="https://github.com/user-attachments/assets/51b244c1-4d3e-4f1d-946b-3fa61093e3cf" />
+
+```html
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text"> (default value)
+<input type="time">
+<input type="url">
+<input type="week">
+```
+```html
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+<img width="363" height="294" alt="image" src="https://github.com/user-attachments/assets/cd1d6b58-7754-4ad9-b9fc-d7ea813391d5" />
+
+```html
+<form>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit">
+</form>
+```html
+
+<img width="761" height="120" alt="image" src="https://github.com/user-attachments/assets/713ad710-8d5c-446d-ba02-be69c1e51284" />
+
+```html
+<form action="/action_page.php">
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <input type="submit">
+</form>
+```
+
+<img width="1172" height="153" alt="image" src="https://github.com/user-attachments/assets/d67b1568-da7d-4300-8771-8dac58f1765e" />
+
+```html
+<textarea id="w3review" name="w3review" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+</textarea>
+```
+
+<img width="1197" height="316" alt="image" src="https://github.com/user-attachments/assets/d2ed656a-8032-4416-b4d6-4ad7f2d21bcf" />
+
