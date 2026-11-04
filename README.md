@@ -187,7 +187,7 @@ Prav tako je na voljo nekaj drugih tipov.
 # Tabele
 ![alt text](image.png)
 ```html
-<table style="width:100%">
+<table>
   <tr>
     <th>Company</th>
     <th>Contact</th>
@@ -205,6 +205,12 @@ Prav tako je na voljo nekaj drugih tipov.
   </tr>
 </table>
 ```
+Brez uporabe css lahko dobiš tabelo malo lepšo, če napišeš
+```html
+<table border="1">
+	// ostala koda
+</table>
+```
 ---
 # Gumbi
 ```html
@@ -214,6 +220,11 @@ Prav tako je na voljo nekaj drugih tipov.
 ```html
 <button onclick="location.href='http://www.example.com'" type="button">
          www.example.com</button>
+```
+
+### Ko klikneš gumb, dobiš obvestilo
+```html
+<button onclick="alert('Pica dodana v košarico! Fuj.')">Naroči</button>
 ```
 ---
 # Link do CSS
