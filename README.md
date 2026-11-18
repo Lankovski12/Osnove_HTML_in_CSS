@@ -237,18 +237,71 @@ Najprej vedno poglej, če si HTML stran povezal z CSS.
 # CSS za značke
 ![alt text](image-1.png)
 
-Recimo, da bi želeli, da ima naša stran barvno ozadje. Katera značka zajame celotno stran? Tako je, body je ta zanačka.
-```css
+# 1. način: CSS v znački (inline)
+
+CSS lahko napišemo kar **v značko**, s pomočjo atributa `style`.
+Ta način vpliva **samo na to eno značko**.
+
+```
+<h1 style="color: blue; font-size: 50px;">V višave</h1>
+
+<img src="slike/balon-mali.svg" style="width: 50px;">
+```
+
+Primeren je za hitro spremembo enega elementa. Če pa želimo enako obliko na več mestih, moramo vse prepisovati znova.
+
+---
+
+# 2. način: CSS v glavi strani (značka style)
+
+CSS lahko napišemo v značko `<style>`, ki jo postavimo v `<head>`.
+Tako velja **za vse enake značke na strani**.
+
+```
+<head>
+    <title>V višave</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h2 {
+            color: darkred;
+        }
+    </style>
+</head>
+```
+
+Zdaj bodo **vsi** naslovi `h2` temno rdeči. Pravilo napišemo samo enkrat
+
+---
+
+# 3. način: CSS v novi datoteki
+
+CSS lahko napišemo v **svojo datoteko**, na primer `stil.css`.
+V HTML jo povežemo z značko `<link>` v `<head>`.
+
+Datoteka **index.html**:
+```
+<head>
+    <title>V višave</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+```
+
+Datoteka **stil.css** (tukaj ne pišemo značke style!):
+```
 body {
-    background-color: blue;
+    background-color: lightblue;
+}
+
+img {
+    width: 600px;
 }
 ```
-Ti <i>h1</i> naslov ni dovolj velik? Ni problema, povečaj ga s css.
-```css
-h1 {
-    font-size: 20px;
-}
-```
+
+To je najbolj pregleden način in ga uporabljajo pravi spletni razvijalci.
+Isto datoteko `stil.css` lahko povežemo z **več stranmi** naenkrat.
+
 ---
 # CSS in barve
 
