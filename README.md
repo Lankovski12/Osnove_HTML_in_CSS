@@ -428,6 +428,22 @@ h1 {
   font-family: cursive;
 }
 ```
+
+##### Minecraft font
+V head dodaj:
+```css
+<link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+
+<style>
+	@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+</style>
+```
+v css dodaj: 
+```css
+body {
+	font-family: 'Minecraft', sans-serif;                                           
+}
+```
 ---
 # CSS in slike
 
